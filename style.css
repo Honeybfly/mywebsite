@@ -1,0 +1,81 @@
+body {
+  font family: Helvetica, sans-serif;
+  }
+
+.wrapper {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "header header header header header"
+  "aside-one main main main aside-two"
+  "footer footer footer footer footer";
+  min-height: 80vh;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+}
+      
+img {
+    width: 100%;
+    height: auto;
+    border: solid blue 3px;
+}
+
+.header {
+  grid-area: header;
+  border-style: solid;
+  border-width: 4px;
+  background-color:lightblue;
+}
+
+.main {
+  grid-area: main;
+  background-color:deepskyblue;
+  padding: 15px;
+  border: solid black 4px;
+}
+
+.aside-one {
+  grid-area: aside-one;
+  background-color:azure;
+  padding: 15px;
+  border: solid black 4px;
+}
+
+.aside-two {
+  grid-area: aside-two;
+  background-color: cornflowerblue;
+  border: solid black 4px;
+  padding: 15px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: dodgerblue;
+  border: solid black 4px;
+  padding: 15px;
+}
+
+@keyframes example {
+  from {background-color:green;}
+  to {background-color: yellow;}
+}
+
+section {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  animation-name: example;
+  animation-duration: 5s;
+}
+
+::marker {
+  color: white;
+}
